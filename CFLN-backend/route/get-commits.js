@@ -19,7 +19,8 @@ module.exports = function(router) {
               let holder = [];
               let preDay = new Date(new Date().setDate(new Date().getDate() - 1));
               let date = preDay.toISOString().split('T');
-              for (let i = 0; i < data.body.length; i++) {
+              for (let i = 0; i < 10; i++) {
+              // for (let i = 0; i < data.body.length; i++) {
                 let check = data.body[i].created_at.split('T');
                 console.log('test', check[0]);
                 console.log('next', date[0]);
